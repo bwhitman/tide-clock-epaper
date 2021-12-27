@@ -2,7 +2,7 @@ import sys, os, json
 from PIL import Image, ImageDraw, ImageFont
 from datetime import datetime, timezone
 
-# has tide_key, owm_key, weather_city, weather_country, tide_lat, tide_lon
+# has tide_key, owm_key, weather_city, weather_country, tide_lat, tide_lon, sea_temperature_url
 import config 
 
 img = Image.new("L",(800,480), (255))
