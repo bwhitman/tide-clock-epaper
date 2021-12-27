@@ -12,8 +12,8 @@ Then run `python3 tide.py` and it will generate a black and white PNG file. If t
 
 ```
 # m h  dom mon dow   command
-@reboot sleep 60 && /home/pi/tide/tide.sh >> /home/pi/tide/log 2>&1
-0 * * * * /home/pi/tide/tide.sh >> /home/pi/tide/log 2>&1
+@reboot sleep 60 && /home/pi/tide-clock-epaper/tide.sh >> /home/pi/tide-clock-epaper/log 2>&1
+0 * * * * /home/pi/tide-clock-epaper/tide.sh >> /home/pi/tide-clock-epaper/log 2>&1
 ```
 
 So that it runs on reboot (after waiting 60s for network to come up) and every hour.
