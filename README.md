@@ -1,6 +1,6 @@
 # tide-clock-epaper
 
-!(https://github.com/bwhitman/tide-clock-epaper/blob/main/live.png)
+![Example](https://github.com/bwhitman/tide-clock-epaper/blob/main/example.png)
 
 A very simple but useful clock for an ePaper display that shows the weather and tide.
 
@@ -18,4 +18,6 @@ Then run `python3 tide.py` and it will generate a black and white PNG file. If t
 
 So that it runs on reboot (after waiting 60s for network to come up) and every hour.
 
-!(https://github.com/bwhitman/tide-clock-epaper/blob/main/example.png)
+![Live shot](https://github.com/bwhitman/tide-clock-epaper/blob/main/live.png)
+
+
