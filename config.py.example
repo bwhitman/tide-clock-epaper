@@ -1,0 +1,8 @@
+weather_city = "Quathiaski Cove"
+weather_country = "CA"
+tide_lat = "50.042"
+tide_lon = "-125.247"
+sea_temperature_url = "https://seatemperature.info/campbell-river-water-temperature.html"
+owm_key = "put key from owm here"
+tide_key = "put key from worldtides here"
+
