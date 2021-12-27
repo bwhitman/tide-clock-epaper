@@ -1,5 +1,7 @@
 # tide-clock-epaper
 
+!(https://github.com/bwhitman/tide-clock-epaper/blob/main/live.png)
+
 A very simple but useful clock for an ePaper display that shows the weather and tide.
 
 I used this [ePaper display](https://www.waveshare.com/7.5inch-e-paper-hat.htm) alongisde a Raspberry Pi Zero.
@@ -16,4 +18,4 @@ Then run `python3 tide.py` and it will generate a black and white PNG file. If t
 
 So that it runs on reboot (after waiting 60s for network to come up) and every hour.
 
-
+!(https://github.com/bwhitman/tide-clock-epaper/blob/main/example.png)
