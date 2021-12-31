@@ -23,6 +23,7 @@ def icon_for_text(text, x, y):
     if(text == "Snow"): ic = "snow.png"
     if(text == "Clear"): ic = "sun.png"
     if(text == "Ocean"): ic = "ocean.png"
+    if(text == "Moon"): ic = "moon.png"
     icon = Image.open(ic)
     img.paste(icon, (x, y), icon)       
 
@@ -121,6 +122,12 @@ def main():
     daily = weather.forecast_daily
     hourly = weather.forecast_hourly
 
+    sunrise_str = datetime.fromtimestamp(now.sunrise_time()).strftime('%I:%M%p').lower()
+    sunset_str = datetime.fromtimestamp(now.sunset_time()).strftime('%I:%M%p').lower()
+    icon_for_text("Clear", margin+10, 120)
+    icon_for_text("Moon", margin+10, 170)
+    text_at(sunrise_str, 70, 130)
+    text_at(sunset_str, 70, 180)
     d.line([margin-10, 250, 170, 250, 170, 360, margin-10, 360, margin-10, 250])
     icon_for_text(now.status, margin, 290)
     text_at("%2.1f°" % (now.temperature("celsius")["temp"]), margin, 330, 20)
